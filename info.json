@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "b64c4a912828d526fd70d2b633b58e82089fd87f",
+    "author": "Dylan Turner <52783447+dylan-turner25@users.noreply.github.com>",
+    "time": "2022-06-17 18:06:10",
+    "files": 1,
+    "merge": true,
+    "message": "Merge pull request #8 from dieghernan/patch-1\n\nFix typo on ORCID"
+  },
+  "repo": "https://github.com/ropensci/rfema",
+  "pkg": "rfema"
+}
