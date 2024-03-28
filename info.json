@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "c57b7540a9f8b0e24267f98e4f48ef82bf19b157",
+    "author": "dylan-turner25 <dylan.turner25@uga.edu>",
+    "time": "2023-11-25 10:32:28",
+    "files": 1,
+    "merge": false,
+    "message": "updating codecov target\n"
+  },
+  "repo": "https://github.com/ropensci/rfema",
+  "pkg": "rfema"
+}
