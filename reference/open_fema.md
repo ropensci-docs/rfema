@@ -1,0 +1,77 @@
+# Get data from the FEMA API
+
+The function allows users to pull data directly from the FEMA API and
+have it returned as a data frame natively within R.The FEMA API limits a
+single query to 1000 records, thus for a query resulting in more than
+1000 records, an iterative approach is necessary to get all of the
+records. The function handles this and will, by default, warn the user
+of how many iterations are needed to get all the records matching their
+query, letting the user decide choose whether to continue.
+
+## Usage
+
+``` r
+open_fema(
+  data_set,
+  top_n = NULL,
+  filters = NULL,
+  select = NULL,
+  ask_before_call = TRUE,
+  file_type = NULL,
+  output_dir = NULL
+)
+```
+
+## Arguments
+
+- data_set:
+
+  a character string indicating the data set to get data from
+
+- top_n:
+
+  an optional integer value to specify the maximum number of matching
+  records to return
+
+- filters:
+
+  an optional list containing values of the data fields contained in the
+  data set to construct filters from
+
+- select:
+
+  an optional character vector to specify which data fields to return
+  (default is to return all data fields)
+
+- ask_before_call:
+
+  a logical indicating if users should be asked if they would like to
+  proceed when an API call results in a large number of records (default
+  is T).
+
+- file_type:
+
+  an optional character string that specifies a file type to save the
+  data as (options are "csv" and "rds"). If a file is specified, the
+  function will not return the api call as a data frame
+
+- output_dir:
+
+  an optional character string specifying the directory to save the
+  exported file if the file_type is specified (defaults to working
+  directory).
+
+## Value
+
+Returns a tibble containing the data from the FEMA API.
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+data <- open_fema(
+  data_set = "fimaNfipClaims", top_n = 100,
+  filters = list(state = "FL")
+)
+} # }
+```

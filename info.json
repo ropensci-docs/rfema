@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "1d7f85ff9838211e7aa27a051cde444a9a5894f9",
+    "author": "dylan-turner25 <dylan.turner25@uga.edu>",
+    "time": "2025-08-09T15:25:29Z",
+    "files": 9,
+    "merge": false,
+    "message": "Version 1.0.1\n"
+  },
+  "repo": "https://github.com/ropensci/rfema",
+  "pkg": "rfema",
+  "time": "2026-08-30T07:51:38Z"
+}
